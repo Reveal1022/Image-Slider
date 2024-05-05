@@ -1,0 +1,81 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 80vw;
+  height: auto;
+  border: 1px solid gold;
+}
+
+.slider:hover {
+  box-shadow: 0px 0px 30px rgba(49, 45, 45, 0.839);
+  transform: scale(1.05);
+}
+.slider:hover .buttons {
+  display: flex;
+}
+
+.sliderop {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
+}
+
+.sliderImages {
+  object-fit: cover;
+  border-right: 0.5px solid white;
+  height: auto;
+  width: 50%;
+  height: auto;
+  transition: translate 0.5s ease-in-out;
+}
+
+.buttons {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: space-between; /* Spread the buttons out */
+  align-items: center;
+}
+
+.indexBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 10px;
+  width: 100%;
+  bottom: 5px;
+  gap: 5px;
+}
+
+.indexBtn button {
+  border: 0.25px solid white;
+  padding: 0;
+  width: 7px;
+  height: auto;
+  border-radius: 100%;
+  border: none;
+  background-color: rgba(45, 43, 43, 0.099);
+}
+
+.buttons button {
+  background-color: rgba(0, 0, 0, 0.055);
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.App {
+  background-color: peachpuff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
